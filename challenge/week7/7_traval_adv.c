@@ -40,7 +40,7 @@ void calculateTravelDays() {
 	for (int i = 0;i < NUMCITY;i++) {
 		int totalDays = getSum(travelDays[i]);
 		double averageDay = getAverage(travelDays[i]);
-		printf("도시 %s에서 보낸 총 일수 : %d, 평균 일 수 : %.2lf\n", cities[i], totalDays, averageDays);
+		printf("도시 %s에서 보낸 총 일수 : %d, 평균 일 수 : %.2lf\n", cities[i], totalDays, averageDay);
 		averageDays[i] = averageDay;
 	}
 	printFamousCity(averageDays);
